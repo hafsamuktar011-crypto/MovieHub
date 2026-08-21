@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Header.module.css";
 import logo from "../../assets/images/marshals (1).webp";
 import {link} from "react-router-dom"
-
+import {Search,Bell,User,ChevronDown} from 'lucide-react'
 
 function Header() {
   return (
@@ -25,7 +25,7 @@ function Header() {
         {/*search*/}
           <div>
             <button>
-              {/* search btn */}
+            <Search />
             </button>
           </div>
         {/*Notification*/}
