@@ -17,7 +17,31 @@ function Header() {
         <a href="">New & Popular</a>
         <a href="">My Lists</a>
         <a href="">Browse by Language</a>
+
       </nav>
+      <div>
+        {/*search*/}
+          <div>
+            <button>
+              {/* search btn */}
+            </button>
+          </div>
+        {/*Notification*/}
+          <button>
+            {/* notification icon */}
+            <span>3</span>
+          </button>
+
+        {/*profile */}
+
+        <div>
+          <button>
+            {/* user icon */}
+
+         {/* drop down icon */}
+          </button>
+        </div>
+      </div>
 
       {/* right side section */}
       </div>
