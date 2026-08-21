@@ -6,24 +6,27 @@ import {Search,Bell,User,ChevronDown} from 'lucide-react'
 
 function Header() {
   return (
-    <header>
-      <div>
+    <header className={styles.header}>
+      <div className={styles.container}>
       {/* logo */}
-      <img src={logo} alt="Logo" />
+      <img src={logo} alt="Logo" className={styles.logo} />
 
       {/* navigation links */}
-      <nav>
-        <Link href="">Tv Shows</Link>
-        <Link href="">Home</Link>
-        <Link href="">movies</Link>
-        <Link href="">New & Popular</Link>
-        <Link href="">My Lists</Link>
-        <Link href="">Browse by Language</Link>
+      <nav className={styles.nav}>
+        <Link className={styles.navLink} href="">Tv Shows</Link>
+        <Link className={styles.navLink} href="">Home</Link>
+        <Link className={styles.navLink} href="">movies</Link>
+        <Link className={styles.navLink} href="">New & Popular</Link>
+        <Link className={styles.navLink} href="">My Lists</Link>
+        <Link className={styles.navLink} href="">Browse by Language</Link>
 
       </nav>
-      <div>
+
+       {/* right side section */}
+
+      <div className={styles.rightSection}>
         {/*search*/}
-          <div>
+          <div className={styles.SearchContainer}>
             <button>
             <Search />
             </button>
@@ -49,7 +52,6 @@ function Header() {
         </div>
       </div>
 
-      {/* right side section */}
       </div>
     </header>
   );
