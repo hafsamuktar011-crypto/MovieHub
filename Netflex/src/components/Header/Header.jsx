@@ -5,6 +5,7 @@ import logo from "../../assets/images/marshals (1).webp";
 function Header() {
   return (
     <header>
+      <div>
       {/* logo */}
       <img src={logo} alt="Logo" />
 
@@ -14,6 +15,7 @@ function Header() {
       </nav>
 
       {/* right side section */}
+      </div>
     </header>
   );
 }
