@@ -11,7 +11,12 @@ function Header() {
 
       {/* navigation links */}
       <nav>
-        <a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a>
+        <a href="">Home</a>
+        <a href="">Tv Shows</a>
+        <a href="">movies</a>
+        <a href="">New & Popular</a>
+        <a href="">My Lists</a>
+        <a href="">Browse by Language</a>
       </nav>
 
       {/* right side section */}
