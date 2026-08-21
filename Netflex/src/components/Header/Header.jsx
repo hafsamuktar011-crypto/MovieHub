@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Header.module.css";
 import logo from "../../assets/images/marshals (1).webp";
+import {link} from "react-router-dom"
+
 
 function Header() {
   return (
@@ -11,12 +13,12 @@ function Header() {
 
       {/* navigation links */}
       <nav>
-        <a href="">Home</a>
-        <a href="">Tv Shows</a>
-        <a href="">movies</a>
-        <a href="">New & Popular</a>
-        <a href="">My Lists</a>
-        <a href="">Browse by Language</a>
+        <link href="">Tv Shows</link>
+        <link href="">Home</link>
+        <link href="">movies</link>
+        <link href="">New & Popular</link>
+        <link href="">My Lists</link>
+        <link href="">Browse by Language</link>
 
       </nav>
       <div>
