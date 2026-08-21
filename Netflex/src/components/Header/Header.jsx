@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Header.module.css";
 import logo from "../../assets/images/marshals (1).webp";
-import {link} from "react-router-dom"
+import {Link} from "react-router-dom"
 import {Search,Bell,User,ChevronDown} from 'lucide-react'
 
 function Header() {
@@ -13,12 +13,12 @@ function Header() {
 
       {/* navigation links */}
       <nav>
-        <link href="">Tv Shows</link>
-        <link href="">Home</link>
-        <link href="">movies</link>
-        <link href="">New & Popular</link>
-        <link href="">My Lists</link>
-        <link href="">Browse by Language</link>
+        <Link href="">Tv Shows</Link>
+        <Link href="">Home</Link>
+        <Link href="">movies</Link>
+        <Link href="">New & Popular</Link>
+        <Link href="">My Lists</Link>
+        <Link href="">Browse by Language</Link>
 
       </nav>
       <div>
@@ -31,6 +31,7 @@ function Header() {
         {/*Notification*/}
           <button>
             {/* notification icon */}
+            <Bell/>
             <span>3</span>
           </button>
 
@@ -39,8 +40,11 @@ function Header() {
         <div>
           <button>
             {/* user icon */}
-
+            <div>
+              <User/>
+            </div>
          {/* drop down icon */}
+         <ChevronDown/>
           </button>
         </div>
       </div>
