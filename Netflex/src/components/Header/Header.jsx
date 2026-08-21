@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Header.module.css";
-import logo from "../../assets/images/logo (1).png";
+import logo from "../../assets/images/marshals (1).webp";
 
 function Header() {
   return (
@@ -9,6 +9,9 @@ function Header() {
       <img src={logo} alt="Logo" />
 
       {/* navigation links */}
+      <nav>
+        <a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a>
+      </nav>
 
       {/* right side section */}
     </header>
