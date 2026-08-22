@@ -7,6 +7,8 @@ import {Search,Bell,User,ChevronDown} from 'lucide-react'
 function Header() {
 
   const [isSearchOpen,setisSearchOpen]=useState(false)
+  const [isProfileOpen,setisProfileOpen]=useState(false)
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -50,14 +52,24 @@ function Header() {
         {/*profile */}
 
         <div className={styles.profileContainer}>
-          <button className={styles.profilebtn}>
+          <button 
+          onClick={()=>{setisProfileOpen(!isProfileOpen)}}
+          className={styles.profilebtn}>
             {/* user icon */}
             <div className={styles.profileAvatar}>
               <User size={20}/>
             </div>
          {/* drop down icon */}
-         <ChevronDown size={20}/>
+         <ChevronDown size={20} className={styles.dropDown}/>
           </button>
+          {isProfileOpen && (
+          <div className={styles.profileMenu}>
+            <Link id={styles.profileMenuItem}>Account</Link>
+            <Link id={styles.profileMenuItem}>help Center</Link>
+            <hr className={styles.profileMenuDivider} />
+            <button id={styles.profileMenuItem}>Sign out</button>
+          </div>)
+          }
         </div>
       </div>
 
