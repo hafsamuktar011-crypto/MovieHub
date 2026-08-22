@@ -27,27 +27,28 @@ function Header() {
       <div className={styles.rightSection}>
         {/*search*/}
           <div className={styles.SearchContainer}>
-            <button>
-            <Search />
+            <button className={styles.searchbtn}>
+            <Search size={20} />
             </button>
           </div>
+
         {/*Notification*/}
-          <button>
+          <button className={styles.iconbtn}>
             {/* notification icon */}
-            <Bell/>
-            <span>3</span>
+            <Bell size={20}/>
+            <span className={styles.notificationbadge} >3</span>
           </button>
 
         {/*profile */}
 
-        <div>
-          <button>
+        <div className={styles.profileContainer}>
+          <button className={styles.profilebtn}>
             {/* user icon */}
-            <div>
-              <User/>
+            <div className={styles.profileAvatar}>
+              <User size={20}/>
             </div>
          {/* drop down icon */}
-         <ChevronDown/>
+         <ChevronDown size={20}/>
           </button>
         </div>
       </div>
