@@ -1,10 +1,12 @@
-import React from "react";
+import React,{useState}from "react";
 import styles from "./Header.module.css";
 import logo from "../../assets/images/marshals (1).webp";
 import {Link} from "react-router-dom"
 import {Search,Bell,User,ChevronDown} from 'lucide-react'
 
 function Header() {
+
+  const [isSearchOpen,setisSearchOpen]=useState(false)
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -27,9 +29,15 @@ function Header() {
       <div className={styles.rightSection}>
         {/*search*/}
           <div className={styles.SearchContainer}>
-            <button className={styles.searchbtn}>
+            <button className={styles.searchbtn}
+            onClick={()=>{setisSearchOpen(!isSearchOpen)}}>
             <Search size={20} />
             </button>
+            {
+              isSearchOpen && (
+                <input type="text" placeholder="Movie title" id={styles.searchInput} />
+              )
+            }
           </div>
 
         {/*Notification*/}
