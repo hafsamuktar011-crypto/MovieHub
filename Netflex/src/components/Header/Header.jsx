@@ -1,13 +1,35 @@
-import React,{useState}from "react";
+import React,{useEffect, useState}from "react";
 import styles from "./Header.module.css";
 import logo from "../../assets/images/marshals (1).webp";
 import {Link} from "react-router-dom"
-import {Search,Bell,User,ChevronDown} from 'lucide-react'
+import {Search,Bell,User,ChevronDown, Code} from 'lucide-react'
 
 function Header() {
 
   const [isSearchOpen,setisSearchOpen]=useState(false)
   const [isProfileOpen,setisProfileOpen]=useState(false)
+
+// for blur
+const [isScrolled,setIsScrolled]=useState(false)
+
+useEffect(()=>{
+  const handleScroll=()=>{
+    if(window.screenY>50){
+      setIsScrolled(true)
+    }else{
+      setIsScrolled(false)
+    }
+  }
+  window.addEventListener('scroll',handleScroll)
+  return()=>window.removeEventListener('scroll',handleScroll)
+})
+useEffect(()=>{
+  //Code
+  return ()=>{
+    //cleanup code
+
+  }
+},[dependecies])
 
   return (
     <header className={styles.header}>
