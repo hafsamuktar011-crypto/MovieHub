@@ -22,17 +22,10 @@ useEffect(()=>{
   }
   window.addEventListener('scroll',handleScroll)
   return()=>window.removeEventListener('scroll',handleScroll)
-})
-useEffect(()=>{
-  //Code
-  return ()=>{
-    //cleanup code
-
-  }
-},[dependecies])
+},[])
 
   return (
-    <header className={styles.header}>
+    <header className={isScrolled ? styles.scrolled :styles.header}>
       <div className={styles.container}>
       {/* logo */}
       <img src={logo} alt="Logo" className={styles.logo} />
