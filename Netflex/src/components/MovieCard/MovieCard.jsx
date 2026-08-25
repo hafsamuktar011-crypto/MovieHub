@@ -26,17 +26,18 @@ function MovieCard() {
             <GoCheckCircleFill/>
             <IoIosArrowDropdownCircle/>
         </div>
-<div>
 
-</div>
         {/* metadata row */}
         <div>
-            <span></span>
-            <span></span>
-            <span></span>
+            <span>U/A 16+</span>
+            <span>Movie</span>
+            <span>ID</span>
         </div>
 
         {/* movie genres */}
+        <div>
+
+        </div>
       </div>
     </div>
   )
