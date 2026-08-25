@@ -23,6 +23,7 @@ function MovieCard() {
         <div>
             <FaCirclePlay/>
             <BiPlusCircle/>
+            <GoCheckCircleFill/>
         </div>
 <div>
 
