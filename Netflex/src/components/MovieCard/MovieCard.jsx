@@ -20,6 +20,10 @@ function MovieCard() {
         {/* badge */}
         <div>badge</div>
         {/* button row */}
+        <div>
+            <FaCirclePlay/>
+            <BiPlusCircle/>
+        </div>
 <div>
 
 </div>
