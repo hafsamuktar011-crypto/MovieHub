@@ -1,31 +1,42 @@
 import React from 'react'
-import NetflexBannerLogo from '../../assets/images/coldStorage (1).webp'
+import NetflexBannerLogo from '../../assets/images/marshals (1).webp'
+import {Play,Info} from "lucide-react"
+import styles from './Banner.module.css'
+
+
 function Banner() {
   return (
-    <div>
+    <div className={styles.Banner}>
 
-      <div>
+      <div className={styles.contents}>
+
 {/* netflex image */}
-<img src={NetflexBannerLogo} alt="Netflex Logo" />
+<img className={styles.logoimg}
+src={NetflexBannerLogo} alt="Netflex Logo" />
+
 {/* title */}
-<h1>Bridgerton</h1>
+<h1 className={styles.title}>Bridgerton</h1>
 
 {/* description */}
-<h1>
+<h1 className={styles.description}>
   shondaland's Emmy-winning series brings julia Quinn's novels
   to life,
   as eight siblings seek their perfect match amid London's scandals and soirees.
 </h1>
 
 {/* button */}
-<div>
-  <button>Play</button>
-  <button>My list</button>
+<div className={styles.buttonContainer}>
+  <button className={styles.button}>
+    <Play size={30}/>
+    Play</button>
+  <button className={styles.button}>
+    <Info size={30}/>
+    My list</button>
 </div>
       </div>
       {/* fading */}
       <div>
-        
+
       </div>
     </div>
   )
