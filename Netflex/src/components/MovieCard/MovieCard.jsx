@@ -6,6 +6,8 @@ import { GoCheckCircleFill } from "react-icons/go";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 
 function MovieCard() {
+
+    let genres=["Adventure","Action","Trailor"]
   return (
     <div>
       {/* poster img */}
@@ -36,7 +38,16 @@ function MovieCard() {
 
         {/* movie genres */}
         <div>
-
+{
+    genres.map((g.index)=>{
+return <span key={index}>
+{g}
+index<genres.length-1 && (
+    <span>.</span>
+    )
+</span>
+    })
+}
         </div>
       </div>
     </div>
