@@ -39,13 +39,13 @@ function MovieCard() {
         {/* movie genres */}
         <div>
 {
-    genres.map((g.index)=>{
-return <span key={index}>
+    genres?.map((g,index) => {
+return(
+<span key={index}>
 {g}
-index<genres.length-1 && (
-    <span>.</span>
-    )
+{index < genres.length-1 &&  <span>.</span>}
 </span>
+) 
     })
 }
         </div>
