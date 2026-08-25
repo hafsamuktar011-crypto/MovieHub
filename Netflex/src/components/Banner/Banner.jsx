@@ -35,7 +35,7 @@ src={NetflexBannerLogo} alt="Netflex Logo" />
 </div>
       </div>
       {/* fading */}
-      <div>
+      <div className={styles.fadeBottom}>
 
       </div>
     </div>
