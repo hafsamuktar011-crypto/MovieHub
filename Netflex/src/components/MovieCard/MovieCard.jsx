@@ -24,11 +24,17 @@ function MovieCard() {
             <FaCirclePlay/>
             <BiPlusCircle/>
             <GoCheckCircleFill/>
+            <IoIosArrowDropdownCircle/>
         </div>
 <div>
 
 </div>
         {/* metadata row */}
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
         {/* movie genres */}
       </div>
