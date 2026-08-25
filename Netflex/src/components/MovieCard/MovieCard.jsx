@@ -1,7 +1,9 @@
 import React from 'react'
 import styles from './MovieCard.module.css'
-import { Play } from 'lucide-react'
-
+import { FaCirclePlay } from "react-icons/fa6";
+import { BiPlusCircle } from "react-icons/bi";
+import { GoCheckCircleFill } from "react-icons/go";
+import { IoIosArrowDropdownCircle } from "react-icons/io";
 
 function MovieCard() {
   return (
@@ -19,7 +21,7 @@ function MovieCard() {
         <div>badge</div>
         {/* button row */}
 <div>
-    
+
 </div>
         {/* metadata row */}
 
