@@ -4,29 +4,32 @@ import { FaCirclePlay } from "react-icons/fa6";
 import { BiPlusCircle } from "react-icons/bi";
 import { GoCheckCircleFill } from "react-icons/go";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
+import { movies } from '../../Data/Data';
 
-function MovieCard() {
+
+function MovieCard({movie}) {
 
     let genres=["Adventure","Action","Trailor"]
   return (
-    <div>
+    <div className={styles.cardrapper}>
       {/* poster img */}
-<img src="" alt="" />
+<img className={styles.poster} 
+src={movies.poster_path} alt={movies.title} />
 
 
       {/* hover card */}
       <div>
         {/* img */}
-        <img src="" alt="" />
+        <img src={movies.poster_path} alt={movies.title} />
 
         {/* badge */}
-        <div>badge</div>
+        <div>Recently added</div>
         {/* button row */}
         <div>
-            <FaCirclePlay/>
-            <BiPlusCircle/>
-            <GoCheckCircleFill/>
-            <IoIosArrowDropdownCircle/>
+            <FaCirclePlay color='white' size={40}/>
+            <BiPlusCircle color='white' size={40}/>
+            <GoCheckCircleFill color='white' size={40}/>
+            <IoIosArrowDropdownCircle color='white' size={40}/>
         </div>
 
         {/* metadata row */}
@@ -43,7 +46,7 @@ function MovieCard() {
 return(
 <span key={index}>
 {g}
-{index < genres.length-1 &&  <span>.</span>}
+{index < genres.length-1 &&  <span>•</span>}
 </span>
 ) 
     })

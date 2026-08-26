@@ -1,5 +1,5 @@
 import React from 'react'
-import NetflexBannerLogo from '../../assets/images/marshals (1).webp'
+import NetflexBannerLogo from '../../assets/images/marshals (3).webp'
 import {Play,Info} from "lucide-react"
 import styles from './Banner.module.css'
 
