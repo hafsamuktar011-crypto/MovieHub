@@ -14,13 +14,15 @@ function MovieCard({movie}) {
     <div className={styles.cardrapper}>
       {/* poster img */}
 <img className={styles.poster} 
-src={movies.poster_path} alt={movies.title} />
+src={movie.poster_path} 
+alt={movie.title} />
 
 
       {/* hover card */}
       <div className={styles.hoverCard}>
         {/* img */}
-        <img src={movies.poster_path} alt={movies.title} />
+        <img className={styles.hoverImage} 
+        src={movie.poster_path} alt={movie.title} />
 
         {/* badge */}
         <div className={styles.badge}>Recently added</div>

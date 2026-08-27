@@ -31,6 +31,7 @@ z-index: 2;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.8);
 
     /* hidden by default */
+
     opacity: 0;
     visibility: hidden;
     transition: 
@@ -39,10 +40,29 @@ z-index: 2;
     transform 0.3s ease;
 
     /* optimization */
-    will-change: tranform, opacity;
+
+    will-change: transform, opacity;
     backface-visibility: hidden;
     pointer-events: none;
     z-index: 999999;
+}
+.cardrapper:hover .hoverCard{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(50%) scale(1);
+    pointer-events: auto;
+}
+.hoverCard:hover{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    pointer-events: auto;
+}
+.hoverImage{
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
 }
 .badge{
     background: red;
@@ -60,8 +80,8 @@ z-index: 2;
     margin: 12px;
     align-items: center;
 }
-.circleButton:hover{
-border: #111 1px solid;
+.circleButton:hover {
+  transform: scale(1.05);
 }
 .circleButtonSmall{
     border-radius: 50%;
@@ -74,8 +94,9 @@ border: #111 1px solid;
     align-items: center;
     justify-content: center;
     margin-left: auto;
-    transition: background 0.2s ease,
-    border-color 0.2s ease;
+   transition:
+  background 0.2s ease,
+  border-color 0.2s ease;
 }
 .circleButtonSmall:hover{
     background: #333;

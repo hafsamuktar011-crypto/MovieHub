@@ -106,6 +106,96 @@ export const movies = [
     genres: ["Adventure", "Fantasy"],
     badge: "Recently added"
   },
+  {
+    id: 10,
+    title: "Hamnet",
+    poster_path:hamnet,
+    matureRating: "U/A 13+",
+    category: "Movie",
+    quality: "HD",
+    genres: ["Adventure", "Fantasy"],
+    badge: "Recently added"
+  },
+  {
+    id: 11,
+    title: "Hoppers",
+    poster_path: hoppers,
+    matureRating: "U/A 13+",
+    category: "Movie",
+    quality: "HD",
+    genres: ["Adventure", "Fantasy"],
+    badge: "Recently added"
+  },
+  {
+    id: 12,
+    title: "Pursuit",
+    poster_path: pursuit,
+    matureRating: "U/A 13+",
+    category: "Movie",
+    quality: "HD",
+    genres: ["Adventure", "Fantasy"],
+    badge: "Recently added"
+  },
+  {
+    id: 13,
+    title: "Screen",
+    poster_path: screen,
+    matureRating: "U/A 13+",
+    category: "Movie",
+    quality: "HD",
+    genres: ["Adventure", "Fantasy"],
+    badge: "Recently added"
+  },
+  {
+    id: 14,
+    title: "Scream",
+    poster_path: scream,
+    matureRating: "U/A 13+",
+    category: "Movie",
+    quality: "HD",
+    genres: ["Adventure", "Fantasy"],
+    badge: "Recently added"
+  },
+  {
+    id: 15,
+    title: "TheBride",
+    poster_path: TheBride,
+    matureRating: "U/A 13+",
+    category: "Movie",
+    quality: "HD",
+    genres: ["Adventure", "Fantasy"],
+    badge: "Recently added"
+  },
+  {
+    id: 16,
+    title: "Vladimir",
+    poster_path: Vladimir,
+    matureRating: "U/A 13+",
+    category: "Movie",
+    quality: "HD",
+    genres: ["Adventure", "Fantasy"],
+    badge: "Recently added"
+  },
+  {
+    id: 17,
+    title: "logo",
+    poster_path: logo,
+    matureRating: "U/A 13+",
+    category: "Movie",
+    quality: "HD",
+    genres: ["Adventure", "Fantasy"],
+    badge: "Recently added"
+  },
+  {
+    id: 18,
+    title: "YoungSherlock",
+    poster_path: YoungSherlock,
+    matureRating: "U/A 13+",
+    category: "Movie",
+    quality: "HD",
+    genres: ["Adventure", "Fantasy"],
+    badge: "Recently added"
+  },
 
   
 ];
