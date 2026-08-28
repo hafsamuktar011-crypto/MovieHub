@@ -22,7 +22,10 @@ function SlideShow({title,movies}) {
         slidePerView={5.8}
         >
              {movies.map((movie)=>(
-    <MovieCard key={movie.id} movie={movie}/>
+                <SwiperSlide key={movie.id} >
+            <MovieCard  movie={movie}/>
+
+                </SwiperSlide>
 
     ))}
         </swiper>
