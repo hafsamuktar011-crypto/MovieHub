@@ -15,10 +15,13 @@ function SlideShow({title,movies}) {
         <h2>{title}</h2>
       
       <div className={styles.Row}>
-        {movies.map((movie)=>(
+        <swiper>
+             {movies.map((movie)=>(
     <MovieCard key={movie.id} movie={movie}/>
 
     ))}
+        </swiper>
+       
       </div>
     </div>
   )
