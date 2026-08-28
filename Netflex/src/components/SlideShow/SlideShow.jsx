@@ -15,7 +15,12 @@ function SlideShow({title,movies}) {
         <h2>{title}</h2>
       
       <div className={styles.Row}>
-        <swiper>
+        <swiper 
+        modules={{Navigation}}
+        Navigations
+        spaceBetween={10} 
+        slidePerView={5.8}
+        >
              {movies.map((movie)=>(
     <MovieCard key={movie.id} movie={movie}/>
 
