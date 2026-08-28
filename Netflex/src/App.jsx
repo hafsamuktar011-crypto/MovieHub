@@ -1,7 +1,7 @@
 import './App.css'
 import Header from './components/Header/Header'
 import Banner from './components/Banner/Banner'
-import MovieCard from './components/MovieCard/MovieCard'
+import DisplayRow from './components/DisplayRow/DisplayRow'
 import { movies } from './Data/Data'
 function App() {
 
@@ -9,10 +9,7 @@ function App() {
     <>
     <Header/>
     <Banner/>
-    {movies.map((movie)=>(
-    <MovieCard key={movie.id} movie={movie}/>
-
-    ))}
+    <DisplayRow/>
     </>
   )
 }
