@@ -13,9 +13,9 @@ const [movies,setMovies]=useState({
     topRated:[],
     action:[],
     comedy:[],
-    horror:[],
+    documentaries:[],
     romance:[],
-    documentaries:[]
+    horror:[]
 })
 
 const fetchMovies=async()=>{
@@ -25,9 +25,10 @@ const fetchMovies=async()=>{
     topRated,
     action,
     comedy,
-    horror,
+    documentaries,
     romance,
-    documentaries]=await Promise.all(
+    horror
+    ]=await Promise.all([
         movieInstance.get(requests.fetchTrending),
         movieInstance.get(requests.fetchNetflixOriginals),
         movieInstance.get(requests.fetchTopRatedMovies),
@@ -36,7 +37,17 @@ const fetchMovies=async()=>{
         movieInstance.get(requests.fetchDocumentaries),
         movieInstance.get(requests.fetchRomanceMovies),
         movieInstance.get(requests.fetchHorrorMovies)
-    )
+    ])
+    setMovies([
+        trending:trendingRes.data.results ,
+        netflixoriginals:netflixRes,
+        topRated:topRatedRes,
+        action:actionRes,
+        comedy:comedyRes,
+        documentaries:documentariesRes,
+        romance:romanceRes,
+        horror:horrorRes
+    ])
     }
     catch(error){
 
