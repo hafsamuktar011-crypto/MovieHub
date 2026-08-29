@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import SlideShow from '../SlideShow/SlideShow'
 import styles from './DisplayRow.module.css'
-import { movies } from './../../Data/Data';
 import { movieInstance } from '../../utility/MoviesInstance';
 import requests from '../../utility/requestUrl';
 
@@ -17,6 +16,10 @@ const [movies,setMovies]=useState({
     romance:[],
     horror:[]
 })
+
+useEffect(()=>{
+    fetchMovies()
+},[])
 
 const fetchMovies=async()=>{
     try{
@@ -38,41 +41,35 @@ const fetchMovies=async()=>{
         movieInstance.get(requests.fetchRomanceMovies),
         movieInstance.get(requests.fetchHorrorMovies)
     ])
-    setMovies([
-        trending:trendingRes.data.results ,
-        netflixoriginals:netflixRes,
-        topRated:topRatedRes,
-        action:actionRes,
-        comedy:comedyRes,
-        documentaries:documentariesRes,
-        romance:romanceRes,
-        horror:horrorRes
-    ])
+    setMovies({
+  trending: trending.data.results,
+  netflixoriginals: netflixoriginals.data.results,
+  topRated: topRated.data.results,
+  action: action.data.results,
+  comedy: comedy.data.results,
+  documentaries: documentaries.data.results,
+  romance: romance.data.results,
+  horror: horror.data.results
+})
     }
     catch(error){
-
+console.log(error)
     }
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
   return (
     <div className={styles.mainRapper}>
-<SlideShow title="Movie Suggestions" movies={movies} />
-<SlideShow title="Popular on Netflix" movies={movies} />
-<SlideShow title="Trending Now" movies={movies} />
-<SlideShow title="New Releases" movies={movies} />
+<SlideShow title="Movie trending" movies={movies.trending} />
+<SlideShow title="Popular on Netflix" movies={movies.netflixoriginals} />
+<SlideShow title="Trending Now" movies={movies.topRated} />
+<SlideShow title="Action" movies={movies.action} />
+<SlideShow title="Comedy" movies={movies.comedy} />
+<SlideShow title="Documentaries" movies={movies.documentaries} />
+<SlideShow title="Romance" movies={movies.romance} />
+<SlideShow title="Horror" movies={movies.horror} />
     </div>
   )
 }

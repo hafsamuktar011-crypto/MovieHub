@@ -10,6 +10,8 @@ import { Navigation } from 'swiper/modules';
 
 
 function SlideShow({title,movies}) {
+    console.log(movies);
+    
   return (
     <div className={styles.title}>
         <h2>{title}</h2>

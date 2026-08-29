@@ -4,25 +4,32 @@ import { FaCirclePlay } from "react-icons/fa6";
 import { BiPlusCircle } from "react-icons/bi";
 import { GoCheckCircleFill } from "react-icons/go";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
-import { movies } from '../../Data/Data';
 
+const IMAGE_BASE = "https://image.tmdb.org/t/p/w500"
 
 function MovieCard({movie}) {
+  console.log(movie);
+  
 
     let genres=["Adventure","Action","Trailor"]
   return (
     <div className={styles.cardrapper}>
       {/* poster img */}
-<img className={styles.poster} 
-src={movie?.poster_path} 
-alt={movie?.title} />
+        <img
+          className={styles.poster}
+          src={`${IMAGE_BASE}${movie?.poster_path}`}
+          alt={movie?.title || movie?.name}
+        />
 
 
       {/* hover card */}
       <div className={styles.hoverCard}>
         {/* img */}
-        <img className={styles.hoverImage} 
-        src={movie?.poster_path} alt={movie?.title} />
+      <img
+           className={styles.poster}
+           src={`${IMAGE_BASE}${movie?.poster_path}`}
+           alt={movie?.title || movie?.name}
+         />
 
         {/* badge */}
         <div className={styles.badge}>Recently added</div>

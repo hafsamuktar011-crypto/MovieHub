@@ -5,7 +5,7 @@
     cursor: pointer;
     transition: transform 0.3s ease;
     overflow: visible;
-    z-index: 1;
+    
 }
 .poster{
 width: 227px;
@@ -19,9 +19,9 @@ z-index: 2;
 
 .hoverCard{
     position: absolute;
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%) scale(0.95);
+    top: 0;
+    left: 0;
+    transform:  scale(0.95);
     width: 320px;
     min-height: 305px;
     height: auto;
@@ -44,12 +44,12 @@ z-index: 2;
     will-change: transform, opacity;
     backface-visibility: hidden;
     pointer-events: none;
-    z-index: 999999;
+    z-index: 10;
 }
 .cardrapper:hover .hoverCard{
     opacity: 1;
     visibility: visible;
-    transform: translateX(50%) scale(1);
+    transform: scale(1);
     pointer-events: auto;
 }
 .hoverCard:hover{
