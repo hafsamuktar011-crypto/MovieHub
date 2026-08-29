@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from './SlideShow.css'
+import styles from './SlideShow.module.css'
 import MovieCard from '../MovieCard/MovieCard'
 import { movies } from './../../Data/Data';
 
-import {swiper,swiperSlide} from 'swiper/react'
+import {Swiper,SwiperSlide} from 'swiper/react'
 import "swiper/css"
 import "swiper/css/navigation"
 import { Navigation } from 'swiper/modules';
@@ -15,20 +15,20 @@ function SlideShow({title,movies}) {
         <h2>{title}</h2>
       
       <div className={styles.Row}>
-        <swiper 
-        modules={{Navigation}}
-        Navigations
+        <Swiper 
+        modules={[Navigation]}
+        navigation
         spaceBetween={10} 
-        slidePerView={5.8}
+        slidesPerView={6.8}
         >
-             {movies.map((movie)=>(
+             {movies?.map((movie)=>(
                 <SwiperSlide key={movie.id} >
             <MovieCard  movie={movie}/>
 
                 </SwiperSlide>
 
     ))}
-        </swiper>
+        </Swiper>
        
       </div>
     </div>

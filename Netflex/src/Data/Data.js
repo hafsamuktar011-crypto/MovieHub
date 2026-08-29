@@ -96,16 +96,7 @@ export const movies = [
     genres: ["Adventure", "Fantasy"],
     badge: "Recently added"
   },
-   {
-    id: 9,
-    title: "Marshals",
-    poster_path: marshals,
-    matureRating: "U/A 13+",
-    category: "Movie",
-    quality: "HD",
-    genres: ["Adventure", "Fantasy"],
-    badge: "Recently added"
-  },
+ 
   {
     id: 10,
     title: "Hamnet",
@@ -178,16 +169,6 @@ export const movies = [
   },
   {
     id: 17,
-    title: "logo",
-    poster_path: logo,
-    matureRating: "U/A 13+",
-    category: "Movie",
-    quality: "HD",
-    genres: ["Adventure", "Fantasy"],
-    badge: "Recently added"
-  },
-  {
-    id: 18,
     title: "YoungSherlock",
     poster_path: YoungSherlock,
     matureRating: "U/A 13+",
